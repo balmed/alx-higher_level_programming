@@ -4,3 +4,6 @@ for i in range(25, -1, -1):
     if i % 2 == 1:
         c += 32
         print("{:c}".format(c), end="")
+    else:
+        print("{:c}".format(c), end="")
+
