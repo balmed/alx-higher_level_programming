@@ -5,8 +5,9 @@ if __name__ == "__main__":
     if cpt == 1:
         print("{} arguments.".format(cpt - 1))
     elif cpt == 2:
-        print("{} arguments.".format(cpt - 1))
+        print("{} argument:".format(cpt - 1))
+        print("{}: {}".format(1, sys.argv[1]))
     else:
         print("{} arguments:".format(cpt - 1))
         for i in range(1, cpt):
-            print("{}:{}".format(i, sys.argv[i]))
+            print("{}: {}".format(i, sys.argv[i]))
