@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-    cpt = len(sys.argv) - 1
-    if cpt == 0:
-        print("0 argumants.")
-    elif cpt == 1:
-        print("1 argumants:")
+    cpt = len(sys.argv)
+    if cpt == 1:
+        print("{} arguments.".format(cpt - 1))
+    elif cpt == 2:
+        print("{} arguments.".format(cpt - 1))
     else:
-        print("{} argumants:".format(cpt))
-        for i in  range(cpt):
-            print("{}:{}".format(i + 1, sys.argv[i + 1]))
+        print("{} arguments:".format(cpt - 1))
+        for i in range(1, cpt):
+            print("{}:{}".format(i, sys.argv[i]))
