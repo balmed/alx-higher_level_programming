@@ -22,4 +22,5 @@ void free_listint(listint_t *head);
 
 int is_palindrome(listint_t **head);
 int pal_ind(listint_t **head, listint_t *end);
+
 #endif /* LISTS_H */
