@@ -1,3 +1,4 @@
 #!/bin/bash
 #sends a GET request to the URL, and displays the body of the response
-curl curl -sL $1
+url=$1
+curl curl -sL $url
